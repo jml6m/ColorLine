@@ -1,4 +1,4 @@
 ColorLine
 =========
 
-jquery UI widget
+Documentation: http://mozzor.com/apps/colorline/ 
