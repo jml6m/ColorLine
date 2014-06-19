@@ -54,10 +54,12 @@ After calling <font class="mono">colorline()</font> on your div, the widget shou
 <p>
 ColorLine has two public methods, <font class="mono">getSelected()</font> and <font class="mono">setSelected(input)</font>. The getter will return the current HEX value of the selected color. The setter takes a positional integer (1 through 6) or a HEX color value that is present in your widget. It will move the selector over the specified position or color. By getting the currently selected color, the developer can use this value to dynamically edit CSS properties on the page with jQuery. Some examples of CSS color elements are: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color">color</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color">background-color</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-color">border-color</a>. As an example, we can create a ColorLine instance below and adjust the <font class="mono">background-color</font> of a <font style="color: #000088">&lt;div&gt;</font>.
 </p>
-<div class="row">
-	<div class="col-md-offset-1 col-md-3">
-		<div id="sample"></div>
-		<script>
+<pre class="prettyprint">
+<code>
+&lt;div class="row"&gt;
+	&lt;div class="col-md-offset-1 col-md-3"&gt;
+		&lt;div id="sample"&gt;&lt;/div&gt;
+		&lt;script&gt;
 			jQ('#sample').colorline();
 			
 			//Click Handler
@@ -74,12 +76,14 @@ ColorLine has two public methods, <font class="mono">getSelected()</font> and <f
 					jQ('#change').css('color','black');
 				}
 			});
-		</script>
-	</div>
-	<div class="col-md-2">
-		<div id="change" style="text-align:center"><strong>DIV</strong></div>
-	</div>
-</div>
+		&lt;/script&gt;
+	&lt;/div&gt;
+	&lt;div class="col-md-2"&gt;
+		&lt;div id="change" style="text-align:center"&gt;&lt;strong&gt;DIV&lt;/strong&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
 <p>Below is the code used to create the example above. There are two <font style="color: #000088">&lt;div&gt;</font> elements, <font class="mono">#sample</font> (which contains the ColorLine) and <font class="mono">#change</font> (which is our target <font style="color: #000088">&lt;div&gt;</font>). The text color of the target <font style="color: #000088">&lt;div&gt;</font> is also changed, based on the background color.</p>
 <pre class="prettyprint">
 <code>//Create the widget
@@ -131,8 +135,7 @@ else
 	</ul>
 </p>
 <hr>
-<p>Please email any feedback or questions to <a href="mailto:contact@mozzor.com">contact@mozzor.com</a>.</p>
-<a href="https://github.com/jml6m/ColorLine"><img src="<?php echo $imgdir . '/github-download-button.png' ?>" width="150px" height="auto" /></a>
+<p>Please email any feedback or questions to <a href="mailto:jlewkovich@mozzor.com">jlewkovich@mozzor.com</a>.</p>
 
 </div>	
 </div> <!-- mainwin -->
