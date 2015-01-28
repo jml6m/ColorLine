@@ -259,7 +259,6 @@ $.widget("ui.colorline", {
 		}
 		else
 		{
-			console.log("Color set has changed, resetting selected");
 			return 1;
 		}
 	}
