@@ -131,7 +131,7 @@ else
 		<li><strong>Error 104: Invalid color</strong> - The color code passed as the <font class="mono">selected</font> parameter in either the constructor or the <font class="mono">setSelector()</font> method does not exist in your current widget instance.</li>
 		<li><strong>The selector icon is not aligned with the color squares</strong> - This is usually caused by inherited CSS values. If your container <font style="color: #000088">&lt;div&gt;</font> inherited a <font class="mono">padding</font> or <font class="mono">margin</font> value, try setting it to '0'. Also, if your <font style="color: #000088">&lt;div&gt;</font> inherits a <font class="mono">line-height</font> of '20px' or greater, there will be a gap present in the gray <font class="mono">selector</font> icon.</li>
 		<li><strong>A blinking cursor appears when I click a square</strong> - This is a result of 'Caret Browsing', which is enabled on Mozilla Firefox and some older versions of Internet Explorer. It is a browser related functionality and must be disabled on the client side.</li>
-		<li><strong>There is a broken image hovering over the ColorLine</strong> - The widget pulls an image from an online server to use as the selector, so you must be connected to the internet to avoid this issue.</li>
+		<li><strong>There is a broken image hovering over the ColorLine</strong> - Please include <a href="http://mozzor.com/img/select_frame.png">this image</a> with relative filepath '~/img/select_frame.png'.</li>
 	</ul>
 </p>
 <hr>
