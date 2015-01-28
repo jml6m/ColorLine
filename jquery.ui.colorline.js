@@ -56,7 +56,7 @@ $.widget("ui.colorline", {
 		}
 		
         var el = this.element,
-		select = $("<img></img>").attr('src',"http://mozzor.com/img/select_frame.png").css({
+		select = $("<img></img>").attr('src',window.location.origin + "/img/select_frame.png").css({
 			'z-index': "1",
 			'padding-left': pad_insert,
 			'vertical-align': "top",
